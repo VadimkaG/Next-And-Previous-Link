@@ -1,0 +1,5 @@
+services:
+  nextprevblock.twig_extension:
+    class: Drupal\nextprevblock\TwigExtension
+    tags:
+      - { name: twig.extension }

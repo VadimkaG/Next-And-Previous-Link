@@ -1,0 +1,16 @@
+{#
+	prev:
+		url - Ссылка на предыдущую страницу
+		title - Заголовок для ссылки на предыдущую страницу
+		attributes - Атрибуты ссылки на предыдущую страницу
+	next:
+		url - Ссылка на следующую страницу
+		title - Заголовок для ссылки на слудующую страницу
+		attributes - Атрибуты ссылки на слудующую страницу
+#}
+{% if prev is not empty %}
+<a{{ prev.attributes }}>{{ prev.title }}</a>
+{% endif %}
+{% if next is not empty %}
+<a{{ next.attributes }}>{{ next.title }}</a>
+{% endif %}

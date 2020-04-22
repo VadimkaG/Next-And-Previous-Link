@@ -1,0 +1,8 @@
+name: Next And Previous Link by Vadimka
+type: module
+description: Next and previous link on detail page. Fork by Vadimka
+core: 8.x
+core_version_requirement: ^8 || ^9
+
+dependencies:
+  - drupal:node
