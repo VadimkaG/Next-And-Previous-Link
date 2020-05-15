@@ -249,9 +249,9 @@ class NextPreviousBlock extends BlockBase implements BlockPluginInterface, Conta
       $nid = $next;
       $url = Url::fromRoute('entity.node.canonical', ['node' => $nid], []);
       return [
-        'url' => "/".$url->getInternalPath(),
+        'url' => $url->toString(),
         'title' => $display_text,
-        'attributes' => new Attribute(['class' => ['nextpre__btn', $class], 'href' => "/".$url->getInternalPath()])
+        'attributes' => new Attribute(['class' => ['nextpre__btn', $class], 'href' => $url->toString()])
       ];
     }
     return '';
